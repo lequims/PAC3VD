@@ -10,7 +10,7 @@ from branca.colormap import LinearColormap
 st.title("Habitatges turístics per municipis de Mallorca")
 
 # Càrrega habitatges turístics
-df_habitatges = pd.read_csv("../data/Habitatges.csv")
+df_habitatges = pd.read_csv("data/Habitatges.csv")
 df_habitatges_municipi = df_habitatges.groupby('Municipi').size()
 
 # Càrrega geojson municipis
