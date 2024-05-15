@@ -11,7 +11,7 @@ st.set_page_config(
 # Títol
 st.title("Comercialització d'allotjaments turístics a Mallorca")
 
-df_habitatges = pd.read_csv("../data/Habitatges.csv")
+df_habitatges = pd.read_csv("data/Habitatges.csv")
 
 df_count_explotadors = df_habitatges['Explotador/s'].value_counts()
 count_unique = df_count_explotadors[df_count_explotadors == 1].sum()
