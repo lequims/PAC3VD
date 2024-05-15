@@ -11,7 +11,7 @@ st.set_page_config(
 # Títol
 st.title("Habitatges turístics a Mallorca")
 
-df_habitatges = pd.read_csv("../data/Habitatges.csv")
+df_habitatges = pd.read_csv("data/Habitatges.csv")
 
 
 total_habitatges = df_habitatges.shape[0]
