@@ -14,7 +14,7 @@ df_habitatges = pd.read_csv("data/Habitatges.csv")
 df_habitatges_municipi = df_habitatges.groupby('Municipi').size()
 
 # Càrrega geojson municipis
-df_geojson = gpd.read_file("../data/mallorca.json")
+df_geojson = gpd.read_file("data/mallorca.json")
 # Transformem camp per poder relacionar les dades
 df_geojson['Municipi'] = df_geojson['neighbourhood'].str.upper()
 
