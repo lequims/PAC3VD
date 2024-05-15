@@ -8,7 +8,7 @@ import plotly.express as px
 st.title("Habitatges turístics per municipis de Mallorca")
 
 # Càrrega habitatges turístics
-df_habitatges = pd.read_csv("../data/Habitatges.csv")
+df_habitatges = pd.read_csv("data/Habitatges.csv")
 
 # Agrupem inici d'activitat per anys
 df_habitatges["Inici d'activitat"] = pd.to_datetime(df_habitatges["Inici d'activitat"])
