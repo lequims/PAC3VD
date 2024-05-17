@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Títol
-st.title("Habitatges turístics a Mallorca")
+st.title("Saturació de places turístiques a Mallorca")
 
 df_habitatges = pd.read_csv("data/Habitatges.csv")
 df_allotjaments = pd.read_csv("data/Allotjaments.csv")
