@@ -7,20 +7,21 @@ from branca.colormap import LinearColormap
 
 st.set_page_config(
     layout="wide",
-    page_title="Municipis saturats"
+    page_title="Saturació turística per a la gestió municipal"
 )
 
 
 # Títol
-st.title("Saturació turística per municipis de Mallorca")
+st.title("Saturació turística per a la gestió municipal")
 
 
 '''
+Quins ajuntaments estan més afectats per la saturació turística?
+
 S'ha calculat un un índex de saturació turística per municipi, hem tingut en compte la relació entre la població resident i el nombre de places totals ofertades. 
 
-Aquest índex ens permet identificar els municipis amb més intensitat de turisme, més pressió sobre els recursos locals i sobre la gestió municipal.
+Aquest índex ens permet identificar els municipis amb més intensitat de turisme i per tant més pressió sobre els recursos locals.
 
-La lectura de l'índex és equivalent al nombre de places turístiques per  habitant del municipi.
 '''
 
 # Carrega les dades
@@ -85,9 +86,13 @@ tooltip = folium.GeoJsonTooltip(
 
 folium.GeoJson(df_merged, name="Mapa de municipis de Mallorca", tooltip=tooltip).add_to(m)
 
-'''
-La saturació turística està especialment present en municipis de la costa i afecta especialment als que tenen una població petita.
-'''
+
 
 
 folium_static(m, width=850, height=850)
+
+'''
+La lectura de l'índex és equivalent al nombre de places turístiques per  habitant del municipi.
+
+La saturació turística està especialment present en municipis de la costa i afecta especialment als que tenen una població petita.
+'''

@@ -12,7 +12,8 @@ st.set_page_config(
 st.title("Oferta de places turístiques a Mallorca")
 
 '''
-L'actual oferta de places turístiques a Mallorca es divideix en habitatges turístics i allotjaments turístics. En aquesta visualització, es mostra la distribució de places disponibles entre aquestes dues categories per a l'any 2024.
+L'actual oferta de places turístiques a Mallorca es divideix en habitatges turístics i allotjaments turístics. 
+En aquesta visualització, hem creuat les dades dels dos tipus d'allotjaments per a tenir una visió més globalitzada de les places turístiques.
 '''
 
 # Carrega les dades
@@ -43,3 +44,9 @@ fig.update_layout(
 
 # Mostrar el gráfico en Streamlit
 st.plotly_chart(fig)
+
+
+'''
+Entenem per habitatges els establiments de tipus vivenda que ofereixen places turístiques. Per altra banda, dins els establiments englobariem Hotels, Agroturismes, etc....
+
+'''
